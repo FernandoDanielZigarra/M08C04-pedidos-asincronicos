@@ -153,7 +153,7 @@ const moviesAPIController = {
         let movieId = req.params.id;
         console.log(movieId)
         Movies
-        .destroy({where: {id: movieId}, force: true}) // force: true es para asegurar que se ejecute la acción
+        .destroy({where: {id: movieId}, force: true})
         .then(confirm => {
             let respuesta;
             console.log('confirm', confirm)
